@@ -1,0 +1,28 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: setup
+    init: |
+      cd /workspace/workshop-spring-stargate/stargate-demo && mvn clean package install -Dmaven.test.skip=true
+ports: 
+  - port: 8080
+    onOpen: open-browser 
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: false
+    addCheck: true
+    addComment: false
+    addBadge: true
+    addLabel: false
+
+vscode:
+  extensions:
+    - redhat.java
+    - github.vscode-pull-request-github
+    - gabrielbb.vscode-lombok
+    - pivotal.vscode-spring-boot
