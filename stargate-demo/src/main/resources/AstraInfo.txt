@@ -1,0 +1,9 @@
+Client ID
+SRJicGZFGaqWfaRqjzieFLyC
+Client Secret
+beuQvX_kkGthYQwljrSorvTEJ._j.G4OkRb9231e5KikEHMh4ft8iBnpLLL_Q.loh9z3I1QLERjphHrgkM2TDleEsSWvi96D1.8qtHChxQQEUGAI4tOip86zmY.AHWSw
+Token
+AstraCS:SRJicGZFGaqWfaRqjzieFLyC:0ec32e6010216486fc657401cbe13c601be087d545c7eb71206bf4da7a24378c
+
+
+gp preview https://e8df2b6e-1b87-45f6-ad68-1205526175f8-eu-central-1.apps.astra.datastax.com/api/rest/swagger-ui/

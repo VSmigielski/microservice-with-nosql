@@ -1,0 +1,53 @@
+
+server:
+  port: ${PORT:8080}
+
+logging:
+  level:
+    root: WARN
+    com.datastax.demo: INFO
+    com.datastax.astra: INFO
+    com.datastax.stargate: INFO
+    com.datastax.oss: ERROR
+    org.junit.vintage: ERROR
+
+spring:
+  messages:
+    basename: i18n/messages
+  thymeleaf:
+    mode: XHTML
+    prefix: classpath:views/view-
+    suffix: .html
+  jackson:
+    default-property-inclusion: non-null
+     
+springdoc:
+  api-docs:
+    enabled: true
+    groups:
+      enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+    display-request-duration: true
+    groups-order: DESC
+  show-actuator: false
+  group-configs:
+    - group: Rest Controllers (Spring MVC)
+      packages-to-scan: com.datastax.demo.stargate
+      
+# Properties exopected by the starter
+astra:
+
+  # Credentials to DB
+  client-id: SRJicGZFGaqWfaRqjzieFLyC
+  client-secret: beuQvX_kkGthYQwljrSorvTEJ._j.G4OkRb9231e5KikEHMh4ft8iBnpLLL_Q.loh9z3I1QLERjphHrgkM2TDleEsSWvi96D1.8qtHChxQQEUGAI4tOip86zmY.AHWSw
+  application-token: AstraCS:SRJicGZFGaqWfaRqjzieFLyC:0ec32e6010216486fc657401cbe13c601be087d545c7eb71206bf4da7a24378c
+
+  # Select an instance
+  cloud-region: eu-central-1
+  database-id: e8df2b6e-1b87-45f6-ad68-1205526175f8
+  keyspace: stargate 
+
+
+
+
